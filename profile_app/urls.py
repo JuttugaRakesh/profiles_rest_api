@@ -6,7 +6,7 @@ from profile_app import views
 router = DefaultRouter()
 
 router.register('hello-viewset', views.HelloViewSet,  basename='hello-viewset')
-
+router.register('profile', views.UserProfileViewSet)
 
 urlpatterns = [
     path('hello/', views.HelloApiView.as_view()),
